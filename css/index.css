@@ -1,0 +1,156 @@
+/* Variabile pentru culori */
+:root {
+  --primary-color: #2e2f42;
+  --secondary-color: #f4f4fd;
+  --accent-color: #6366f1;
+  --text-dark: #434455;
+  --button-hover-color: #4f46e5;
+  --button-active-color: #4338ca;
+}
+
+/* Stil global pentru body */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Stiluri pentru titluri și navigație */
+h1,
+h2,
+nav ul li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+  min-width: 1440px;
+  height: 600px;
+  background: var(--primary-color);
+  position: relative;
+}
+
+#hero > button {
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 4px;
+  position: absolute;
+  top: 428px;
+  left: 636px;
+}
+
+#hero button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+}
+
+#hero > button:active {
+  background-color: var(--button-active-color);
+  cursor: pointer;
+}
+
+#hero > h1 {
+  color: var(--secondary-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Stiluri pentru contact-info */
+.contact-info a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: var(--accent-color);
+}
+
+/* Navigație */
+#top-menu-nav {
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.top-menu-nav-item {
+  color: var(--primary-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Adrese */
+address a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+/* Strategy Section */
+#strategy dl dt {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+#strategy dl dd {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* What We Are Doing Section */
+#whatwearedoing h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+#whatwearedoing ul li {
+  list-style: none;
+  margin: 0;
+}
+
+/* Our Team Section */
+#ourteam {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#ourteam h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.team-names {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
